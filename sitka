@@ -60,9 +60,57 @@
 		a:hover {
 			border-color: #333;
 		}
+
+		/* Media Queries */
+		@media screen and (max-width: 768px) {
+			.container {
+				padding: 30px;
+			}
+			h1 {
+				font-size: 36px;
+			}
+			p {
+				font-size: 20px;
+			}
+		}
+
+		/* Form styles */
+		form label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		input[type="text"],
+		input[type="email"],
+		textarea {
+			width: 100%;
+			padding: 10px;
+			border: 2px solid #ddd;
+			border-radius: 4px;
+			margin-bottom: 20px;
+		}
+		input[type="submit"] {
+			background-color: #333;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		input[type="submit"]:hover {
+			background-color: #555;
+		}
 	</style>
 </head>
 <body>
+	<header>
+		<div class="logo">
+			<a href="#">
+				<img src="logo.png" alt="Sitka Boatworks logo">
+			</a>
+		</div>
+	</header>
+	<div class="container">
+		<h
 	<header>
 		<div class="logo">
 			<a href="#">
@@ -75,14 +123,33 @@
 		<p>Sitka Boatworks is a company of wooden boatbuilders and shipwrights located in Sitka, Alaska. We build, restore and repair wooden boats of all kinds. Our team of experienced craftsmen uses traditional techniques and the finest materials to create boats that are not only beautiful but also seaworthy and durable. Contact us today to discuss your project.</p>
 		<a href="#contact">Contact Us</a>
 	</div>
-	<footer id="contact" style="background-color: #f5f5f5; padding: 50px;">
+	<section class="services">
+		<div class="container">
+			<h2>Our Services</h2>
+			<div class="row">
+				<div class="col">
+					<h3>Boat Building</h3>
+					<p>We build wooden boats of all kinds, from small dinghies to large sailboats and motor yachts. Our craftsmen use traditional techniques and the finest materials to create boats that are not only beautiful but also seaworthy and durable.</p>
+				</div>
+				<div class="col">
+					<h3>Restoration</h3>
+					<p>We restore wooden boats to their former glory. Whether your boat needs new planks, ribs, or a complete refit, we have the expertise to make it seaworthy again.</p>
+				</div>
+				<div class="col">
+					<h3>Repair</h3>
+					<p>We repair wooden boats of all kinds, from minor dings and scratches to major structural damage. Our team of experienced shipwrights can get your boat back on the water in no time.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer id="contact">
 		<div class="container">
 			<h2>Contact Us</h2>
 			<p>If you have any questions or would like to discuss your project, please don't hesitate to contact us.</p>
 			<form action="#" method="POST">
 				<label for="name">Name:</label>
 				<input type="text" id="name" name="name"
-        				<label for="email">Email:</label>
+				<label for="email">Email:</label>
 				<input type="email" id="email" name="email">
 				<label for="message">Message:</label>
 				<textarea id="message" name="message"></textarea>

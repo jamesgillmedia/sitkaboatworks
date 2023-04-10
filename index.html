@@ -1,154 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Sitka Boatworks - Wooden Boatbuilders and Shipwrights</title>
-	<!-- SEO tags -->
-	<meta name="description" content="Sitka Boatworks is a company of wooden boatbuilders and shipwrights located in Vancouver, BC. We build, restore and repair wooden boats of all kinds.">
-	<meta name="keywords" content="Sitka Boatworks, Wooden Boatbuilders, Shipwrights, Sitka, Vancouver, BC, British Columbia">
-	<!-- CSS styles -->
-	<style>
-		body {
-    background-image: url('background.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-  }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitka Boatworks, specializing in custom wooden boat building and restoration, located in Vancouver, BC.">
+    <title>Sitka Boatworks | Wooden Boatbuilders in Vancouver, BC</title>
+    <link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-			margin: 0;
-			padding: 0;
-			font-family: Arial, sans-serif;
-			color: #333;
-		}
-		header {
-			background-color: #fff;
-			box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-			position: fixed;
-			top: 0;
-			left: 0;
-			right: 0;
-			padding: 20px;
-			z-index: 999;
-		}
-		.logo {
-			margin: 0;
-		}
-		.container {
-			max-width: 960px;
-			margin: 100px auto;
-			text-align: center;
-			padding: 50px;
-			box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-			background-color: #fff;
-		}
-		h1 {
-			font-size: 48px;
-			margin: 0;
-			padding: 0;
-			color: #555;
-		}
-		p {
-			font-size: 24px;
-			margin: 0;
-			padding: 0;
-			color: #777;
-			line-height: 1.5;
-			margin-top: 20px;
-			margin-bottom: 40px;
-		}
-		a {
-			color: #333;
-			text-decoration: none;
-			border-bottom: 2px solid #ddd;
-			transition: all 0.3s ease;
-		}
-		a:hover {
-			border-color: #333;
-		}
-
-		/* Media Queries */
-		@media screen and (max-width: 768px) {
-			.container {
-				padding: 30px;
-			}
-			h1 {
-				font-size: 36px;
-			}
-			p {
-				font-size: 20px;
-			}
-		}
-
-		/* Form styles */
-		form label {
-			display: block;
-			margin-bottom: 10px;
-		}
-		input[type="text"],
-		input[type="email"],
-		textarea {
-			width: 100%;
-			padding: 10px;
-			border: 2px solid #ddd;
-			border-radius: 4px;
-			margin-bottom: 20px;
-		}
-		input[type="submit"] {
-			background-color: #333;
-			color: #fff;
-			padding: 10px 20px;
-			border: none;
-			border-radius: 4px;
-			cursor: pointer;
-		}
-		input[type="submit"]:hover {
-			background-color: #555;
-		}
-	</style>
 </head>
 <body>
-	
-	<header>
-		
-	<div class="container">
-		<h1>Sitka Boatworks</h1>
-		<p>Sitka Boatworks is a company of wooden boatbuilders and shipwrights located in Sitka, Alaska. We build, restore and repair wooden boats of all kinds. Our team of experienced craftsmen uses traditional techniques and the finest materials to create boats that are not only beautiful but also seaworthy and durable. Contact us today to discuss your project.</p>
-		<a href="#contact">Contact Us</a>
-	</div>
-	<section class="services">
-		<div class="container">
-			<h2>Our Services</h2>
-			<div class="row">
-				<div class="col">
-					<h3>Boat Building</h3>
-					<p>We build wooden boats of all kinds, from small dinghies to large sailboats and motor yachts. Our craftsmen use traditional techniques and the finest materials to create boats that are not only beautiful but also seaworthy and durable.</p>
-				</div>
-				<div class="col">
-					<h3>Restoration</h3>
-					<p>We restore wooden boats to their former glory. Whether your boat needs new planks, ribs, or a complete refit, we have the expertise to make it seaworthy again.</p>
-				</div>
-				<div class="col">
-					<h3>Repair</h3>
-					<p>We repair wooden boats of all kinds, from minor dings and scratches to major structural damage. Our team of experienced shipwrights can get your boat back on the water in no time.</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<footer id="contact">
-		<div class="container">
-			<h2>Contact Us</h2>
-			<p>If you have any questions or would like to discuss your project, please don't hesitate to contact us.</p>
-			<form action="#" method="POST">
-				<label for="name">Name:</label>
-				<input type="text" id="name" name="name"
-				<label for="email">Email:</label>
-				<input type="email" id="email" name="email">
-				<label for="message">Message:</label>
-				<textarea id="message" name="message"></textarea>
-				<button type="submit">Send</button>
-			</form>
-		</div>
-	</footer>
+    <div class="parallax"></div>
+    <div class="container">
+        <img src="logo.png" alt="Sitka Boatworks Logo" class="logo">
+        <h1>Sitka Boatworks</h1>
+        <p>Specializing in custom wooden boat building and restoration, Sitka Boatworks is a Vancouver-based company dedicated to delivering high-quality craftsmanship and exceptional service.</p>
+        <p>Contact: Eric<br>Phone: +1 (123) 456-7890</p>
+    </div>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #333;
+    overflow: hidden;
+    position: relative;
+}
+
+.parallax {
+    background-image: url('background.jpg');
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
 </body>
 </html>

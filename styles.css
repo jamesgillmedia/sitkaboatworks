@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    font-family: 'Roberto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #333;
     position: relative;
     min-height: 100%;
@@ -42,6 +42,10 @@ body {
     margin-top: 5%;
 }
 
+.empty {
+    height: 400px; /* Adjust this value to control the height of the empty container */
+}
+
 .logo {
     width: 100px;
     height: auto;
@@ -52,14 +56,6 @@ body {
 
 h1 {
     font-size: 2.3rem;
-    margin-bottom: 1rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-h2 {
-    font-size: 2rem;
     margin-bottom: 1rem;
     white-space: nowrap;
     overflow: hidden;
@@ -79,5 +75,6 @@ p {
 
     p {
         font-size: 1rem;
+        white-space: nowrap;
     }
 }

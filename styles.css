@@ -4,17 +4,16 @@
     box-sizing: border-box;
 }
 
-html {
+html, body {
     height: 100%;
 }
 
 body {
-    font-family: 'Roberto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #333;
     position: relative;
-    min-height: 100%;
     overflow-x: hidden;
-    padding-bottom: 2rem; /* This adds some padding at the bottom of the page */
+    padding-bottom: 2rem;
 }
 
 .parallax::before {
@@ -39,7 +38,11 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 80%;
     max-width: 600px;
-    margin-top: 5%;
+    margin: 5% auto 0;
+}
+
+.empty {
+    height: 400px;
 }
 
 .logo {
@@ -53,17 +56,6 @@ body {
 h1 {
     font-size: 2.3rem;
     margin-bottom: 1rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 p {
@@ -73,8 +65,15 @@ p {
 }
 
 @media (max-width: 480px) {
+    body {
+        padding: 0;
+    }
+    
     h1 {
         font-size: 2rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     p {

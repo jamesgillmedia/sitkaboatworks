@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Roberto', sans-serif;
+    font-family: 'Roberto', thin;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -25,7 +25,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 150%;
+    background-size: 190%;
 }
 
 .container {
@@ -48,6 +48,14 @@ body {
 
 h1 {
     font-size: 2.3rem;
+    margin-bottom: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+h2 {
+    font-size: 2rem;
     margin-bottom: 1rem;
     white-space: nowrap;
     overflow: hidden;

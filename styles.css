@@ -22,10 +22,15 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media (min-width: 768px) {
+    .parallax {
+        background-attachment: fixed;
+    }
 }
 
 .container {

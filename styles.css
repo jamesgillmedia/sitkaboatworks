@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-html, body {
+html {
     height: 100%;
 }
 
@@ -12,6 +12,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #333;
     position: relative;
+    min-height: 100%;
     overflow-x: hidden;
     padding-bottom: 2rem;
 }
@@ -38,11 +39,7 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 80%;
     max-width: 600px;
-    margin: 5% auto 0;
-}
-
-.empty {
-    height: 400px;
+    margin-top: 5%;
 }
 
 .logo {
@@ -65,18 +62,11 @@ p {
 }
 
 @media (max-width: 480px) {
-    body {
-        padding: 0;
-    }
-    
     h1 {
-        font-size: 2rem;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        font-size: 1.8rem; /* Adjust this value to fit the title on one line on small screens */
     }
 
     p {
-        font-size: 1rem;
+        font-size: 0.9rem; /* Adjust this value to fit the paragraph text on one line on small screens */
     }
 }

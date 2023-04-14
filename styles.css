@@ -64,6 +64,7 @@ p {
     font-size: 1.1rem;
     line-height: 1.5;
     margin-bottom: 1rem;
+    word-wrap: break-word;
 }
 
 @media (max-width: 480px) {
@@ -72,9 +73,6 @@ p {
     }
 
     p {
-        font-size: 1rem;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        font-size: 0.9rem;
     }
 }

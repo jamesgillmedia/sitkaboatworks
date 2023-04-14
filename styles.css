@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roberto', sans-serif;
     color: #333;
     position: relative;
     min-height: 100%;
@@ -39,7 +39,7 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 80%;
     max-width: 600px;
-    margin: 5% auto;
+    margin-top: 5%;
 }
 
 .logo {
@@ -64,7 +64,12 @@ p {
     margin-bottom: 1rem;
 }
 
+/* Add the media query to adjust styles for mobile devices */
 @media (max-width: 480px) {
+    body {
+        background-attachment: scroll;
+    }
+
     h1 {
         font-size: 2rem;
     }
